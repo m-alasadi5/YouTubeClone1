@@ -33,7 +33,7 @@ function LikeDislikes(props) {
                     response.data.likes.map(like => {
                         if (like.userId === props.userId) {
                             setLikeAction('liked')
-                        }
+                        } return null;
                     })
                 } else {
                     alert('Failed to get likes')
@@ -51,7 +51,7 @@ function LikeDislikes(props) {
                     response.data.dislikes.map(dislike => {
                         if (dislike.userId === props.userId) {
                             setDislikeAction('disliked')
-                        }
+                        } return null;
                     })
                 } else {
                     alert('Failed to get dislikes')
